@@ -1,0 +1,20 @@
+<!DOCTYP html>
+<html lang = 'en'>
+<head>
+    <title>Authtation</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            @if(!auth)
+            <li><a href="/register">REGISTER</a></li>
+            <li><a href="/login">LOGIN</a></li>
+            @else
+            <li><a href="/logout">LOGOUT</a></li>
+            @endif
+        </ul>
+    </nav>
+    @!section('content')
+</body>
+</html>

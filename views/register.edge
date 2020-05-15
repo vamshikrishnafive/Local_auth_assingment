@@ -1,0 +1,19 @@
+@layout('layouts.app')
+
+@section('content')
+
+<h1> Login </h1>
+
+<div>
+    <form action="/user/register" method="POST">
+        <label> EMAIL ID </label>
+        <input type="email" placeholder="Email" name="email">
+        <label> USERNAME </label>
+        <input type="text" placeholder="Username" name="username">
+        <label> PASSWORD </label>
+        <input type="password" placeholder="Password" name="password">
+        <button> REGISTER </button>
+    </form>
+</div>
+
+@endsection
